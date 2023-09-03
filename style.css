@@ -73,6 +73,7 @@ nav ul li a:hover {
   padding: 14px 70px;
   border-radius: 50px;
   margin-top: 20px;
+  width: 150vh;
 }
 
 .content p:hover {
@@ -87,7 +88,8 @@ nav ul li a:hover {
   border-radius: 50px;
   color: #fff;
   position: absolute;
-  top: 55%;
+  width: 150vh;
+  top: 50%;
   left: 50%;
   transform: translateX(-50%);
   opacity: 0;
