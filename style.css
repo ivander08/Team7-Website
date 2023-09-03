@@ -8,13 +8,13 @@
 
 .home {
   width: 100%;
-  height: 100vh; /* Menggunakan 100% dari tinggi viewport (screen) user. */
+  height: 100vh;
   background-image: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
   position: relative;
-  padding: 0 5%; /* Padding 0 pixel di atas dan bawah, 5% dari width ke kiri dan kanan. */
-  display: flex; /* Pilihan layout. */
-  align-items: center; /* Untuk vertical alignment. */
-  justify-content: center; /* untuk horizontal alignment. */
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 nav {
@@ -45,8 +45,10 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  transition: color 0.5s;
+  transition: color 0.2s, font-size 0.2s;
   color: #cfe9ff;
+  text-decoration: underline;
+  font-size: 1.2em;
 }
 
 .content {
@@ -60,7 +62,7 @@ nav ul li a:hover {
 }
 
 .content h1:hover {
-  transition: color 0.5s;
+  transition: color 0.2s;
   color: #cfe9ff;
 }
 
@@ -74,7 +76,7 @@ nav ul li a:hover {
 }
 
 .content p:hover {
-  transition: color 0.5s;
+  transition: color 0.2s;
   color: #cfe9ff;
 }
 
