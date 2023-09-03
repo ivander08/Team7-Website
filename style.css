@@ -76,8 +76,28 @@ nav ul li a:hover {
 }
 
 .content p:hover {
-  transition: color 0.2s;
-  color: #cfe9ff;
+  color: transparent;
+  border: 0px solid #fff;
+}
+
+.content p::before {
+  content: attr(data-text);
+  border: 2px solid #fff;
+  padding: 14px 20px;
+  border-radius: 50px;
+  width: 1500px;
+  color: #fff;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  text-align: center;
+}
+
+.content p:hover::before {
+  opacity: 1;
 }
 
 .content ul {
